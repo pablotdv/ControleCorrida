@@ -3,5 +3,21 @@
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    >
+    android:minWidth="25px"
+    android:minHeight="25px">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <ListView
+            android:id="@+id/ltvAtividades"
+            android:layout_height="0dip"
+            android:layout_width="match_parent"
+            android:layout_weight="1" />
+        <Button
+            android:text="Nova atividade"
+            android:id="@+id/btnNovaAtividade"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
 </LinearLayout>
