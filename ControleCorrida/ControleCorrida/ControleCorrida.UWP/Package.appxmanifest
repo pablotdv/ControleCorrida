@@ -7,11 +7,11 @@
   IgnorableNamespaces="uap mp">
 
   <Identity
-    Name="3853e335-c67f-44f2-8046-014fe0df4c53"
+    Name="9bd245f1-b20a-4a3e-9bc4-7e369b64f63a"
     Publisher="CN=pablo"
     Version="1.0.0.0" />
 
-  <mp:PhoneIdentity PhoneProductId="3853e335-c67f-44f2-8046-014fe0df4c53" PhonePublisherId="00000000-0000-0000-0000-000000000000"/>
+  <mp:PhoneIdentity PhoneProductId="9bd245f1-b20a-4a3e-9bc4-7e369b64f63a" PhonePublisherId="00000000-0000-0000-0000-000000000000"/>
 
   <Properties>
     <DisplayName>ControleCorrida.UWP</DisplayName>
