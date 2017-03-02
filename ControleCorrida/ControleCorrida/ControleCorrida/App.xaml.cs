@@ -13,7 +13,7 @@ namespace ControleCorrida
         {
             InitializeComponent();
 
-            MainPage = new ControleCorrida.MainPage();
+            MainPage = new ControleCorrida.View.ControleCorridaPage();
         }
 
         protected override void OnStart()
