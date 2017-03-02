@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:ControleCorrida.ViewModel"
+             x:Class="ControleCorrida.View.DemoAzureOfflineSyncPage">
+    <StackLayout Orientation="Vertical">
+        <Button Text="Agregar Contactos"
+            Command="{Binding GenerateContactsCommand}"/>
+        <Button Text="Limpar Contactos locales"
+            Command="{Binding CleanLocalDataCommand}"/>
+        <ListView ItemsSource="{Binding Contacts}"
+              IsRefreshing="{Binding IsBusy}"
+              IsPullToRefreshEnabled="True"
+              RefreshCommand="{Binding RefreshCommand}">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <TextCell Text="{Binding Name}"
+                          Detail="{Binding CreatedAt}"/>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+    </StackLayout>
+</ContentPage>

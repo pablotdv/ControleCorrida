@@ -13,7 +13,7 @@ namespace ControleCorrida
         {
             InitializeComponent();
 
-            MainPage = new ControleCorrida.MainPage();
+            MainPage = new ControleCorrida.View.DemoAzureOfflineSyncPage();
         }
 
         protected override void OnStart()
